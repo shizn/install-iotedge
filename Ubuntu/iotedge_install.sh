@@ -9,12 +9,11 @@ sudo cp ./microsoft.gpg /etc/apt/trusted.gpg.d/
 
 echo "Install Moby, a container runtime, and its CLI commands"
 sudo apt-get update
-sudo apt-get install moby-engine
-sudo apt-get install moby-cli
+sudo apt-get install -y moby-engine
+sudo apt-get install -y moby-cli
 
 echo "Download and install the IoT Edge Security Daemon"
-sudo apt-get update
-sudo apt-get install iotedge
+sudo apt-get install -y iotedge
 
 echo "Input IoT Edge Device Connection String:"
 read connectionstring
